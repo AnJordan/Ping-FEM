@@ -1,0 +1,160 @@
+@import 'utilities';
+
+.header-title {
+  font-weight: 300;
+  color: $grey;
+  line-height: 51px;
+  margin: 50px 0 10px 0;
+
+  span {
+    color: #000;
+    font-weight: 700;
+  }
+}
+
+.dashboard {
+  max-width: 100%;
+
+  margin-top: 75px;
+
+  img {
+    width: 45%;
+
+  }
+}
+
+.form {
+
+  margin: 30px;
+
+  input {
+    border-radius: 50px;
+    border: 1px solid $p-blue;
+    width: 375px;
+    padding: 15px 10px;
+  }
+
+  .btn {
+    background-color: $blue;
+    border: 1px solid $blue;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 15px 50px;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: $p-blue;
+      border: 1px solid $p-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.form__error {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+  color: $l-red;
+}
+
+.form__error~.btn {
+  transform: translateY(2rem)
+}
+
+footer {
+  margin-top: 5rem;
+  text-align: center;
+
+  div>.social {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .social {
+    list-style-type: none;
+
+    .circle {
+      border: 1px solid $p-blue;
+      border-radius: 50%;
+      color: $blue;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      height: 40px;
+      width: 40px;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+        background-color: $blue;
+        border: 1px solid $blue;
+      }
+    }
+  }
+
+  .copyright {
+    margin-top: 35px;
+    color: $grey;
+    font-size: .6em;
+  }
+
+  .attribution {
+    font-size: .7em;
+  }
+}
+
+@media(max-width: 414px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  .header-title {
+    font-size: 28px;
+    line-height: 43px;
+  }
+
+  .form {
+    display: inline-block;
+
+    input {
+      width: 95%;
+      margin-bottom: 10px;
+      padding: 10px 10px;
+      color: $p-blue;
+    }
+
+    .btn {
+      width: 300px;
+      padding: 10px;
+      margin: 0;
+
+    }
+  }
+
+  .form__error {
+
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .form__error~.btn {
+    transform: translateY(0);
+  }
+
+  .dashboard {
+
+    img {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+
+  .social {
+    padding-left: 0;
+  }
+
+}

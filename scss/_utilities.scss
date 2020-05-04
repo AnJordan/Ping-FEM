@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap');
+
+$blue: hsl(223, 87%, 63%);
+$p-blue: hsl(223, 100%, 88%);
+$l-red: hsl(354, 100%, 66%);
+$grey: hsl(0, 0%, 59%);
+ $vd-blue: hsl(209, 33%, 12%);
+
+ $libre: 'Libre Franklin', san-serif;
+
+ *{
+   box-sizing: border-box;
+   margin: 0;
+  }
+
+  body{
+    font-size: 20px;
+    font-family: $libre;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    margin: 0 auto;
+    place-items: center center;
+
+  }
+
+  .container{
+    margin: 5rem 0 2rem;
+    text-align: center;
+
+  }
+
+  .invalid-input {
+    border-color: $l-red;
+  }
